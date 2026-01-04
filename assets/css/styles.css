@@ -4406,7 +4406,7 @@ fieldset:disabled .btn {
   .navbar-expand-sm .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-    transition:  all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .navbar-expand-sm .navbar-toggler {
@@ -4464,7 +4464,7 @@ fieldset:disabled .btn {
   .navbar-expand-md .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-     transition:  all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .navbar-expand-md .navbar-toggler {
@@ -4522,7 +4522,7 @@ fieldset:disabled .btn {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-     transition:  all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .navbar-expand-lg .navbar-toggler {
@@ -4580,7 +4580,7 @@ fieldset:disabled .btn {
   .navbar-expand-xl .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-     transition:  all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .navbar-expand-xl .navbar-toggler {
@@ -4638,7 +4638,7 @@ fieldset:disabled .btn {
   .navbar-expand-xxl .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-     transition:  all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .navbar-expand-xxl .navbar-toggler {
@@ -4668,6 +4668,11 @@ fieldset:disabled .btn {
     padding: 0;
     overflow-y: visible;
   }
+}
+
+.masthead .container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .nav-wrapper {
@@ -5727,7 +5732,8 @@ fieldset:disabled .btn {
   background-color: var(--bs-main-color);
   color: #fff;
   transition: all 0.3s ease-in-out;
-  transform: scale(1.1);   /* grows text smoothly */
+  transform: scale(1.1);
+  /* grows text smoothly */
 }
 
 .me-2 a:hover {
@@ -12623,10 +12629,14 @@ fieldset:disabled .btn {
 
 html {
   scroll-padding-top: 4.5rem;
+  overflow-x: hidden;
+
 }
 
 body {
   position: relative;
+  overflow-x: hidden;
+
 }
 
 p {
@@ -12684,7 +12694,7 @@ p {
 }
 
 .bi-phone span a {
-  color:#000;
+  color: #000;
   padding: 0px 10px;
   font-size: 10px;
 }
@@ -12727,10 +12737,11 @@ p {
 }
 
 .navbar-divider {
-    width: 100%;
-    height: 1px;
-    background-color: #e7e7e7;
-    margin: 0.5rem 0;         /* spacing: top & bottom */
+  width: 100%;
+  height: 1px;
+  background-color: #e7e7e7;
+  margin: 0.5rem 0;
+  /* spacing: top & bottom */
 }
 
 
@@ -12749,7 +12760,7 @@ p {
   letter-spacing: 0.0625em;
   margin: auto;
   text-transform: uppercase;
-  
+
 
 }
 
@@ -12767,7 +12778,7 @@ p {
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color:#cecece;
+  color: #cecece;
 }
 
 @media (min-width: 992px) {
@@ -12860,6 +12871,7 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+
 .timeline {
   position: relative;
   padding: 0;
