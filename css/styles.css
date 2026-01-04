@@ -4415,6 +4415,22 @@ fieldset:disabled .btn {
   transform: rotate(-45deg);
   top: 0;
 }
+
+@media (max-width: 991.98px) {
+  .collapse {
+    --bs-collapse-transition: height 0.7s ease; /* default 0.35s → slow it down */
+  }
+  #navbarResponsive {
+    opacity: 0;
+    transition: opacity 0.7s ease;
+  }
+
+  #navbarResponsive.show {
+    opacity: 1;
+  }
+}
+
+
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     transition: none;
