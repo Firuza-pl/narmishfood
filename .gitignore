@@ -1,0 +1,39 @@
+# Node modules (if using Node.js for build tools)
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Compiled or built files
+/dist/
+/build/
+/*.min.js
+/*.min.css
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Images (optional: if you don't want large images in Git)
+# /assets/img/
+
+# Bootstrap / external libraries
+/vendor/

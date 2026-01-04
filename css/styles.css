@@ -4355,16 +4355,66 @@ fieldset:disabled .btn {
 }
 
 .navbar-toggler {
-  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-  font-size: var(--bs-navbar-toggler-font-size);
-  line-height: 1;
-  color: var(--bs-navbar-color);
-  background-color: transparent;
-  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
-  border-radius: var(--bs-navbar-toggler-border-radius);
-  transition: var(--bs-navbar-toggler-transition);
+  border: none;                /* remove default border */
+  width: 50px;                 /* width */
+  height: 50px;                /* height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;          /* rounded corners */
+  transition: background 0.3s ease;
+}
+#mainNav .navbar-toggler:hover {
+  background-color: #1B5E20;
 }
 
+/* Customize the hamburger bars */
+#mainNav .navbar-toggler-icon {
+  background-image: none; /* remove default bars */
+  position: relative;
+  width: 30px;
+  height: 3px;
+  background-color: #2E7D32;
+  transition: all 0.3s ease;
+}
+
+/* Add the other 2 bars using pseudo-elements */
+#mainNav .navbar-toggler-icon::before,
+#mainNav .navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #2E7D32;
+  transition: all 0.3s ease;
+}
+
+#mainNav .navbar-toggler-icon::before {
+  top: -10px;
+}
+
+#mainNav .navbar-toggler-icon::after {
+  top: 10px;
+}
+
+/* Optional: animate into "X" on toggle */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-color: #fff;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     transition: none;
