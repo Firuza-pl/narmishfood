@@ -1,0 +1,60 @@
+/* Background */
+.bg-auth-image {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+   url('../img/background/bg-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+/* Card styling */
+.card {
+  backdrop-filter: blur(6px);
+}
+
+/* Optional dark overlay for readability */
+.bg-auth-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35); /* semi-transparent dark overlay */
+}
+
+/* Frosted glass card */
+.frosted-card {
+  position: relative; /* keep above overlay */
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari */
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .bg-auth-image {
+    background-position: top;
+  }
+}
+
+
+/* Card improvements */
+.card {
+  backdrop-filter: blur(5px);
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 12px;
+}
+
+/* Button */
+.btn-primary {
+  border: none;
+}
+
+.btn-primary:hover {
+}
