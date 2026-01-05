@@ -20,11 +20,6 @@ carousel.addEventListener('slid.bs.carousel', function () {
   });
 
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js')
-    .then(() => console.log('Service Worker registered'))
-    .catch(err => console.log(err));
-}
 
 let deferredPrompt;
 window.addEventListener('beforeinstallprompt', (e) => {
