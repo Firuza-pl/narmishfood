@@ -13171,9 +13171,15 @@ header.masthead {
   color: #fff;
   background-image: url("../img/header/bg-4.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  header.masthead {
+    background-attachment: scroll;
+  }
 }
 
 header.masthead .masthead-subheading {
