@@ -4347,6 +4347,13 @@ fieldset:disabled .btn {
   color: var(--bs-navbar-active-color);
 }
 
+.navbar-toggler{
+      background: transparent;
+    border: 1px solid #beb3b3ad;
+    border-radius: 10px;
+    color: #beb3b3;
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -4406,7 +4413,6 @@ fieldset:disabled .btn {
   .navbar-expand-sm .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-    transition: all 0.3s ease;
   }
 
   .navbar-expand-sm .navbar-toggler {
@@ -4464,7 +4470,6 @@ fieldset:disabled .btn {
   .navbar-expand-md .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-    transition: all 0.3s ease;
   }
 
   .navbar-expand-md .navbar-toggler {
@@ -4522,7 +4527,6 @@ fieldset:disabled .btn {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-    transition: all 0.3s ease;
   }
 
   .navbar-expand-lg .navbar-toggler {
@@ -4580,7 +4584,6 @@ fieldset:disabled .btn {
   .navbar-expand-xl .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-    transition: all 0.3s ease;
   }
 
   .navbar-expand-xl .navbar-toggler {
@@ -4638,7 +4641,6 @@ fieldset:disabled .btn {
   .navbar-expand-xxl .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-    transition: all 0.3s ease;
   }
 
   .navbar-expand-xxl .navbar-toggler {
@@ -12629,14 +12631,17 @@ fieldset:disabled .btn {
 
 html {
   scroll-padding-top: 4.5rem;
-  overflow-x: hidden;
+   overflow-x: hidden; /* prevent horizontal scroll */
+  overflow-y: auto;   /* allow vertical scroll */
+  height: 100%;
 
 }
 
 body {
   position: relative;
-  overflow-x: hidden;
-
+  overflow-x: hidden; /* prevent horizontal scroll */
+  overflow-y: auto;   /* allow vertical scroll */ 
+height: 100%;
 }
 
 p {
@@ -12843,11 +12848,12 @@ header.masthead .masthead-subheading {
 }
 
 header.masthead .masthead-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+ font-size: clamp(2.2rem, 8vw, 4.5rem);
+  line-height: 1.1;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal; /* MUST */
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
