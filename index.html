@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link rel="manifest" href="assets/js/manifest.json">
@@ -73,8 +72,8 @@
     <!-- Masthead-->
     <header class="masthead">
         <div class="container-fluid px-3 text-center">
-            <div class="masthead-subheading">TEZLIKLƏ</div>
-            <div class="masthead-heading text-uppercase" data-aos="fade-up">
+            <div class="masthead-subheading" data-aos-duration="300">TEZLIKLƏ</div>
+            <div class="masthead-heading text-uppercase" data-aos-duration="350">
                 Narmishfood
             </div>
         </div>
@@ -83,11 +82,10 @@
     <section class="page-section" id="about">
         <div class="container my-5">
             <div class="row justify-content-center">
-
                 <!-- Main Content -->
                 <div class="col-12 col-lg-8">
                     <!-- Single Post -->
-                    <div class="single-post mb-5 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="single-post mb-5">
                         <div class="post-thumb mb-3">
                             <div class="container-fluid p-0">
                                 <div id="postCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -111,7 +109,6 @@
                                             </a>
                                         </div>
                                     </div>
-
                                     <!-- Controls -->
                                     <button class="carousel-control-prev" type="button" data-bs-target="#postCarousel"
                                         data-bs-slide="prev">
@@ -125,9 +122,8 @@
                                     </button>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="post-content">
+                        <div class="post-content" style="margin-bottom: 20px;">
                             <div class="post-meta d-flex justify-content-between flex-wrap mb-2">
                                 <div class="d-flex align-items-center gap-3">
                                     <span class="post-author">Narmishfood</span>
@@ -140,7 +136,7 @@
                                 </div>
                             </div>
                             <h2 class="post-headline">Sağlam qida bloggeri</h2>
-                            <div class="post-text-wrapper" style="overflow:hidden; height:145px;">
+                            <div class="post-text-wrapper">
                                 <p>
                                     1994-cü il, 9 may tarixində anadan olmuşam. Beş ildən artıqdır ki, sağlam qidalanma
                                     sahəsində fəaliyyət göstərirəm və bu müddət ərzində yüzlərlə xanımın həyatına
@@ -265,37 +261,164 @@
                         </div>
                         <!-- Ad Widget -->
                         <div class="single-widget-area add-widget text-center mb-4 p-3 border rounded shadow-sm">
-                            <img src="img/sidebar-img/6.jpg" alt="" class="img-fluid rounded mb-2">
+                            <a href="https://www.instagram.com/p/DRorw3JjEz4/" target="_blank">
+                                <video class="img-fluid rounded mb-2" autoplay muted loop playsinline
+                                    style="width:100%; max-height:250px; object-fit:cover;">
+                                    <source src="assets/img/portfolio/gym-1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </a>
+
                             <h5 class="mb-1">Mənimlə Məşq</h5>
                             <p>İndi qeydiyyatdan keçin və mənimlə məşq edin!</p>
-                            <a href="https://wa.me/994556968008" target="_blank"  class="btn btn-success btn-sm">Qeydiyyat</a>
+                            <a href="https://wa.me/994556968008" target="_blank"
+                                class="btn btn-success btn-sm">Qeydiyyat</a>
                         </div>
                         <!-- Newsletter Widget -->
                         <div class="single-widget-area newsletter-widget text-center p-3 border rounded shadow-sm">
                             <h6 class="widget-title mb-3">Xəbər Bülleteni (TEZLIKLƏ)</h6>
                             <p class="small text-muted">Xəbər bülletenimə abunə olun və hər zaman yeniliklərdən xəbərdar
                                 olun!</p>
-                            <a href="https://wa.me/994556968008" target="_blank"  class="btn btn-success btn-sm">Abone ol</a>
+                            <a href="https://wa.me/994556968008" target="_blank" class="btn btn-success btn-sm">Abone
+                                ol</a>
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
     <!-- Services-->
-    <section class="page-section" id="services">
-        <div class="container">
+    <section class="page-section bg-light" id="services">
+        <div class="container py-5">
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <h2 class="section-heading text-uppercase" style="color:#77892d;">
+                    Sizləri nələr gözləyir
+                </h2>
+                <p class="text-muted mt-2">
+                    Sağlamlıq yolunda sizi dəstəkləyən tam və balanslı yanaşma
+                </p>
+            </div>
+
+            <!-- Services Cards -->
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="bi bi-person-check-fill"></i>
+                        <h5>Fərdi proqramlar</h5>
+                        <p>Sizə uyğun hazırlanmış fərdi menyular və məşq proqramları.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos-delay="100">
+                    <div class="service-card">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <h5>Sadə və davamlı nəticələr</h5>
+                        <p>Qısa zamanda yox, uzunmüddətli dəyişikliklər üçün yönləndirmə.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos-delay="200">
+                    <div class="service-card">
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        <h5>Motivasiya dəstəkli qidalanma</h5>
+                        <p>Qidalanma planları motivasiya modulları ilə təqdim olunur.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="bi-heart-pulse"></i>
+                        <h5>Psixoloji balans dəstəyi</h5>
+                        <p>Motivasiya və stress idarəçiliyi üçün dəstək.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos-delay="100">
+                    <div class="service-card">
+                        <i class="bi bi-laptop"></i>
+                        <h5>Online və oflayn seçimlər</h5>
+                        <p>Zalda və ya evdən rahat tətbiq edilə bilən proqramlar.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos-delay="200">
+                    <div class="service-card">
+                        <i class="bi bi-shield-check"></i>
+                        <h5>Təhlükəsiz və elmi yanaşma</h5>
+                        <p>Beynəlxalq sertifikatlara əsaslanan sağlam metodlar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission Text -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-9 text-center">
+                    <h3 class="mt-4" style="color:#77892d;">
+                        Sənin məqsədlərin – Mənim missiyam
+                    </h3>
+                    <p class="text-muted mt-3">
+                        Hər bir insanın sağlamlığa gedən yolu fərqlidir. Mənim məqsədim –
+                        sənin bu yolda öz gücünü tapmağına dəstək olmaqdır.
+                    </p>
+                    <p>
+                        Proqramlarım yalnız çəki itirmək üçün deyil, zehni rahatlıq, balanslı
+                        həyat və uzunmüddətli nəticələr üçün hazırlanıb.
+                    </p>
+                    <p>
+                        Qidalanma, məşq, gündəlik vərdişlər və psixoloji dəstək ilə
+                        onlayn və ya fərdi şəkildə sənin yanındayam.
+                    </p>
+                    <p class="fw-semibold">
+                        Siz də öz uğur hekayənizi yazmağa bu gün başlayın!
+                    </p>
+
+                    <a href="https://wa.me/994556968008" target="_blank" class="btn btn-success mt-3">
+                        Mənimlə Əlaqə
+                    </a>
+                </div>
+            </div>
+
         </div>
+         <div class="container stats-section">
+        <div class="row text-center g-4">
+            
+            <div class="col-12 col-md-4">
+                <div class="stat-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <h2><span class="counter" data-target="300">0</span>+</h2>
+                    <p>Məmnun müştəri</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="stat-box">
+                    <i class="bi bi-journal-check"></i>
+                    <h2><span class="counter" data-target="100">0</span>+</h2>
+                    <p>Sağlam yeni menyu</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="stat-box">
+                    <i class="bi bi-heart-pulse"></i>
+                    <h2><span class="counter" data-target="200">0</span>+</h2>
+                    <p>Yenilənmiş bədən</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
     </section>
+
     <!-- Menu-->
-    <section class="page-section bg-light" id="menu">
+    <section class="page-section bg-light" id="menu" data-aos="fade-down">
         <div class="container">
-            <!-- <div class="text-center">
+            <div class="text-center">
                 <h2 class="section-heading text-uppercase">Portfolio</h2>
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div> -->
+            </div>
             <div class="row">
 
             </div>
@@ -321,11 +444,10 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/food.js"></script>
+    <script src="assets/js/smooth.js"></script>
 </body>
 
 </html>

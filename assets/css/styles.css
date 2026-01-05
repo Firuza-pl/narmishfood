@@ -12676,11 +12676,44 @@ p {
 }
 
 .page-section {
-  padding: 3rem 0;
+  padding: 0rem 0;
 }
 
+.stats-section {
+    background: #f9faf5;
+}
+
+.stat-box {
+    background: #fff;
+    border-radius: 18px;
+    padding: 30px 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+    transition: transform .3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-6px);
+}
+
+.stat-box i {
+    font-size: 42px;
+    color: #7a8f2c;
+    margin-bottom: 10px;
+}
+
+.stat-box h2 {
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.stat-box p {
+    color: #555;
+    margin: 0;
+}
+
+
 .post-text-wrapper {
-  max-height: 150px;
+  max-height: 145px;
   /* initial preview height */
   overflow: hidden;
   transition: max-height 0.7s ease;
@@ -12908,15 +12941,20 @@ p {
 }
 
 header.masthead {
-  padding-top: 10.5rem;
+  padding-top: 11.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../img/header/bg-2.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+   url("../img/header/bg-4.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 header.masthead .masthead-subheading {
@@ -12967,10 +13005,42 @@ header.masthead .masthead-heading {
   text-decoration: none;
 }
 
+.service-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #77892d;
+    margin-bottom: 15px;
+}
+
+.service-card h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 10rem;
+    padding-top: 12rem;
     /* adjust 9–11rem if needed */
     padding-bottom: 6rem;
   }
