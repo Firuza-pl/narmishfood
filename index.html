@@ -11,12 +11,13 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-   <!-- Google fonts-->
+    <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link rel="manifest" href="assets/js/manifest.json">
 </head>
@@ -36,7 +37,8 @@
 
             <div class="languages d-none d-md-flex align-items-center">
                 <ul class="list-unstyled d-flex mb-0">
-                    <li class="me-2"><a href="adminPanel/login.html">Panelə Giriş <i class="bi bi-arrow-right"></i> </a></li>
+                    <li class="me-2"><a href="adminPanel/login.html" target="_blank">Panelə Giriş <i
+                                class="bi bi-arrow-right"></i> </a></li>
                 </ul>
             </div>
         </div>
@@ -56,32 +58,231 @@
                     <li class="nav-item" data-aos="fade-down" data-aos-delay="100"><a class="nav-link"
                             href="#about">Haqqımda</a></li>
                     <li class="nav-item" data-aos="fade-down" data-aos-delay="200"><a class="nav-link"
-                            href="#service">Üstünlük</a></li>
+                            href="#services">Üstünlük</a></li>
                     <li class="nav-item" data-aos="fade-down" data-aos-delay="300"><a class="nav-link"
                             href="#menu">Menu</a></li>
                     <li class="nav-item" data-aos="fade-down" data-aos-delay="400"><a class="nav-link"
                             href="#gym">Məşq</a></li>
                     <li class="nav-item" data-aos="fade-down" data-aos-delay="500"><a class="nav-link"
                             href="#contact">Əlaqə</a></li>
-                            
+
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Masthead-->
     <header class="masthead">
-    <div class="container-fluid px-3 text-center">
-        <div class="masthead-subheading">TEZLIKLƏ</div>
-        <div class="masthead-heading text-uppercase" data-aos="fade-up">
-            Narmishfood
+        <div class="container-fluid px-3 text-center">
+            <div class="masthead-subheading">TEZLIKLƏ</div>
+            <div class="masthead-heading text-uppercase" data-aos="fade-up">
+                Narmishfood
+            </div>
         </div>
-    </div>
-</header>
+    </header>
     <!-- About-->
     <section class="page-section" id="about">
-        <div class="container">
+        <div class="container my-5">
+            <div class="row justify-content-center">
 
+                <!-- Main Content -->
+                <div class="col-12 col-lg-8">
+                    <!-- Single Post -->
+                    <div class="single-post mb-5 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="post-thumb mb-3">
+                            <div class="container-fluid p-0">
+                                <div id="postCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a href="assets/img/about/img-1.jpg" target="_blank">
+                                                <img src="assets/img/about/img-1.jpg" class="d-block w-100 carousel-img"
+                                                    alt="Slide 1">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/img/about/img-2.jpg" target="_blank">
+                                                <img src="assets/img/about/img-2.jpg" class="d-block w-100 carousel-img"
+                                                    alt="Slide 2">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/img/about/img-3.jpg" target="_blank">
+                                                <img src="assets/img/about/img-3.jpg" class="d-block w-100 carousel-img"
+                                                    alt="Slide 3">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Controls -->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#postCarousel"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#postCarousel"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta d-flex justify-content-between flex-wrap mb-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <span class="post-author">Narmishfood</span>
+                                    <span class="post-date">2021-dən sizinlə</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <a href="#" class="post-favourite"><i class="fa fa-heart-o"></i> 10</a>
+                                    <a href="#" class="post-comments"><i class="fa fa-comment-o"></i> 12</a>
+                                    <a href="#" class="post-share"><i class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div>
+                            <h2 class="post-headline">Sağlam qida bloggeri</h2>
+                            <div class="post-text-wrapper" style="overflow:hidden; height:145px;">
+                                <p>
+                                    1994-cü il, 9 may tarixində anadan olmuşam. Beş ildən artıqdır ki, sağlam qidalanma
+                                    sahəsində fəaliyyət göstərirəm və bu müddət ərzində yüzlərlə xanımın həyatına
+                                    toxunaraq onların həm fiziki, həm də psixoloji bərpasına dəstək olmuşam. Türkiyədə
+                                    fəaliyyət göstərən onlayn fitness akademiyasını birinciliklə bitirmişəm.
+                                    <br><br>
+                                    Bu sahədə qazandığım dərin bilik və təcrübə sayəsində təqdim etdiyim proqramların
+                                    99%-i yüksək və uzunmüddətli nəticələr vermişdir. Sağlamlıq mənim üçün yalnız düzgün
+                                    qidalanma deyil, motivasiya, balans və daxili gücün bərpasıdır.
+                                    <br><br>
+                                    Artıq bir ildir ki, fitness zalında fərdi və qrup məşqləri ilə xanımlara peşəkar
+                                    dəstək göstərirəm. Hər bir qadının fərdi potensialını ön planda tutaraq, ona uyğun
+                                    yanaşma formalaşdırıram.
+                                    <br><br>
+                                    <b> Missiyam:</b> sağlamlığın hər kəsin həyatı üçün əlçatan olduğunu göstərmək,
+                                    qadınların
+                                    həm bədən, həm də ruh sağlamlığına çatmaları üçün ilham və dəstək olmaqdır.
+                                </p>
+                            </div>
+                            <a href="#" class="btn btn-success btn-sm mt-2" id="readMoreBtn">Daha çox</a>
+                        </div>
+                        <div id="certCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="d-flex gap-2 justify-content-center">
+                                        <img src="assets/img/about/certf-1.jpg" class="d-block certificate-img" alt="">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex gap-2 justify-content-center">
+                                        <img src="assets/img/about/certf-1.jpg" class="d-block certificate-img" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#certCarousel"
+                                data-bs-slide="prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#333"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                </svg>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#certCarousel"
+                                data-bs-slide="next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#333"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 1 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar -->
+                <div class="col-12 col-lg-4">
+                    <div class="blog-sidebar mt-5 mt-lg-0">
+                        <!-- About Me Widget -->
+                        <div class="single-widget-area about-me-widget text-center mb-4 p-3 border rounded shadow-sm">
+                            <img src="assets/img/about/profile.jpg" alt="About Me" class="img-fluid rounded-circle mb-2"
+                                style="width:100px; height:100px; object-fit:cover;">
+                            <h5 class="mb-2" style="color: #77892d;">Narmin Ahmedova</h5>
+                            <p class="small text-muted">Sağlam həyat tərzi və psixoloji balans üzrə fitness mütəxəssisi
+                            </p>
+                        </div>
+                        <!-- Subscribe & Follow Widget -->
+                        <div class="single-widget-area subscribe_widget text-center mb-4 p-3 border rounded shadow-sm">
+                            <h6 class="widget-title mb-3">Sosial şəbəkələr</h6>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-phone"></i></a>
+
+                            </div>
+                        </div>
+                        <!-- Popular Post Widget -->
+                        <div class="single-widget-area popular-post-widget mb-4 p-3 border rounded shadow-sm">
+                            <h6 class="widget-title text-center mb-3">Məhşur postlar</h6>
+                            <div class="list-group list-group-flush">
+                                <div class="list-group-item d-flex gap-3 p-2">
+                                    <img src="assets/img/portfolio/post-1.jpg" alt="" class="img-fluid rounded"
+                                        style="width:60px; height:60px; object-fit:cover;">
+                                    <div>
+                                        <a href="https://www.instagram.com/p/DTA6fjLjDFb/" target="_blank">
+                                            <h6 class="mb-1">Sevdiyim dürümü sizinlə paylaşdım</h6>
+                                        </a>
+                                        <small class="text-muted">Günün 2-ci yarısında rahatlıqla yeyə bilərsiniz.
+                                            Çalışın axşam saatlarında bu tip dürümləri çox istifadə etməyəsiniz</small>
+                                    </div>
+                                </div>
+                                <div class="list-group-item d-flex gap-3 p-2">
+                                    <img src="assets/img/portfolio/post-2.jpg" alt="" class="img-fluid rounded"
+                                        style="width:60px; height:60px; object-fit:cover;">
+                                    <div>
+                                        <a href="https://www.instagram.com/p/DTDikMQjPHJ/" target="_blank">
+                                            <h6 class="mb-1"> Sağlam Kəsmikli Desert</h6>
+                                        </a>
+                                        <small class="text-muted">Tərkibi və Hazırlanması üçün videonu izleyin</small>
+                                    </div>
+                                </div>
+                                <div class="list-group-item d-flex gap-3 p-2">
+                                    <img src="assets/img/portfolio/post-3.jpg" alt="" class="img-fluid rounded"
+                                        style="width:60px; height:60px; object-fit:cover;">
+                                    <div>
+                                        <a href="https://www.instagram.com/p/DSIBq_RjCdS/" target="_blank">
+                                            <h6 class="mb-1"> Tez bazar ara öyün</h6>
+                                        </a>
+                                        <small class="text-muted">Tərkibi və Hazırlanması üçün videonu izleyin</small>
+                                    </div>
+                                </div>
+                                <div class="list-group-item d-flex gap-3 p-2">
+                                    <img src="assets/img/portfolio/post-4.jpg" alt="" class="img-fluid rounded"
+                                        style="width:60px; height:60px; object-fit:cover;">
+                                    <div>
+                                        <a href="https://www.instagram.com/p/DRr9pAqDByk/" target="_blank">
+                                            <h6 class="mb-1"> Limonlu Tiramisu – Fit versiya</h6>
+                                        </a>
+                                        <small class="text-muted">Tərkibi və Hazırlanması üçün videonu izleyin</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ad Widget -->
+                        <div class="single-widget-area add-widget text-center mb-4 p-3 border rounded shadow-sm">
+                            <img src="img/sidebar-img/6.jpg" alt="" class="img-fluid rounded mb-2">
+                            <h5 class="mb-1">Mənimlə Məşq</h5>
+                            <p>İndi qeydiyyatdan keçin və mənimlə məşq edin!</p>
+                            <a href="https://wa.me/994556968008" target="_blank"  class="btn btn-success btn-sm">Qeydiyyat</a>
+                        </div>
+                        <!-- Newsletter Widget -->
+                        <div class="single-widget-area newsletter-widget text-center p-3 border rounded shadow-sm">
+                            <h6 class="widget-title mb-3">Xəbər Bülleteni (TEZLIKLƏ)</h6>
+                            <p class="small text-muted">Xəbər bülletenimə abunə olun və hər zaman yeniliklərdən xəbərdar
+                                olun!</p>
+                            <a href="https://wa.me/994556968008" target="_blank"  class="btn btn-success btn-sm">Abone ol</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
+
     </section>
     <!-- Services-->
     <section class="page-section" id="services">
@@ -121,6 +322,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/food.js"></script>

@@ -31,3 +31,35 @@ function showInstallPrompt() {
     });
   }
 }
+
+const btn = document.getElementById('readMoreBtn');
+const wrapper = document.querySelector('.post-text-wrapper');
+const previewHeight = 150; // height of preview
+
+btn.addEventListener('click', function(e){
+  e.preventDefault();
+
+  if(wrapper.classList.contains('expanded')){
+    // Collapse smoothly
+    const fullHeight = wrapper.scrollHeight; // current full height
+    wrapper.style.height = fullHeight + 'px'; // set current height first
+
+    requestAnimationFrame(() => { // wait for next frame
+      wrapper.style.transition = 'height 0.9s ease';
+      wrapper.style.height = previewHeight + 'px'; // animate to preview
+    });
+
+    wrapper.classList.remove('expanded');
+    btn.textContent = 'Daha çox';
+
+  } else {
+    // Expand smoothly
+    const fullHeight = wrapper.scrollHeight;
+    wrapper.style.transition = 'height 0.9s ease';
+    wrapper.style.height = fullHeight + 'px';
+    wrapper.classList.add('expanded');
+    btn.textContent = 'Daha az';
+  }
+});
+
+

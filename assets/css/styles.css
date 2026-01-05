@@ -266,15 +266,36 @@ sub {
 sup {
   top: -0.5em;
 }
-
+.post-date{
+      color: #49822f;
+}
 a {
   color: #fff;
   text-decoration: underline;
 }
 
-a:hover {
-  color: var(--bs-link-hover-color);
+.list-group-flush a{
+ color: #728a0c;
 }
+.post-certificates h6 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.post-certificates .certificate-img {
+    height: 100px;          /* fixed height */
+    width: auto;             /* keep aspect ratio */
+    border-radius: 5px;      /* optional rounding */
+    object-fit: cover;
+    flex-shrink: 0;          /* prevents shrinking in flex container */
+    cursor: pointer;         /* clickable if you want lightbox later */
+    transition: transform 0.3s ease;
+}
+
+.post-certificates .certificate-img:hover {
+    transform: scale(1.05); /* hover effect */
+}
+
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -4347,11 +4368,11 @@ fieldset:disabled .btn {
   color: var(--bs-navbar-active-color);
 }
 
-.navbar-toggler{
-      background: transparent;
-    border: 1px solid #beb3b3ad;
-    border-radius: 10px;
-    color: #beb3b3;
+.navbar-toggler {
+  background: transparent;
+  border: 1px solid #beb3b3ad;
+  border-radius: 10px;
+  color: #beb3b3;
 }
 
 
@@ -4678,11 +4699,13 @@ fieldset:disabled .btn {
 }
 
 .nav-wrapper {
-    display: block; /* necessary for smooth collapse height animation */
+  display: block;
+  /* necessary for smooth collapse height animation */
 }
 
 .collapsing {
-    transition: height 0.6s ease; /* slow down menu opening */
+  transition: height 0.6s ease;
+  /* slow down menu opening */
 }
 
 .navbar-expand {
@@ -12631,17 +12654,21 @@ fieldset:disabled .btn {
 
 html {
   scroll-padding-top: 4.5rem;
-   overflow-x: hidden; /* prevent horizontal scroll */
-  overflow-y: auto;   /* allow vertical scroll */
+  overflow-x: hidden;
+  /* prevent horizontal scroll */
+  overflow-y: auto;
+  /* allow vertical scroll */
   height: 100%;
 
 }
 
 body {
   position: relative;
-  overflow-x: hidden; /* prevent horizontal scroll */
-  overflow-y: auto;   /* allow vertical scroll */ 
-height: 100%;
+  overflow-x: hidden;
+  /* prevent horizontal scroll */
+  overflow-y: auto;
+  /* allow vertical scroll */
+  height: 100%;
 }
 
 p {
@@ -12649,8 +12676,61 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
+
+.post-text-wrapper {
+  max-height: 150px;
+  /* initial preview height */
+  overflow: hidden;
+  transition: max-height 0.7s ease;
+}
+
+.post-text-wrapper.expanded {
+  max-height: 2000px;
+  /* large enough for full text */
+  transition: max-height 0.7s ease;
+
+}
+
+.carousel-inner img {
+  max-height: 450px;
+  object-fit: contain;
+  border-radius: 10px;
+  /* optional rounding */
+}
+
+#postCarousel {
+  width: 100%;
+  /* optional: set min-height or ratio */
+  aspect-ratio: 16 / 9;
+  /* keeps proportional height, can adjust */
+}
+
+#postCarousel .carousel-item {
+  height: 100%;
+}
+
+#postCarousel .carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* fills container fully */
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+ background-color: rgb(133 146 77);
+  /* dark semi-transparent background */
+  border-radius: 50%;
+  /* circular buttons */
+  width: 40px;
+  height: 40px;
+  background-size: 100%, 100%;
+}
+
+
 
 .page-section h2.section-heading,
 .page-section .section-heading.h2 {
@@ -12848,13 +12928,45 @@ header.masthead .masthead-subheading {
 }
 
 header.masthead .masthead-heading {
- font-size: clamp(2.2rem, 8vw, 4.5rem);
+  font-size: clamp(2.2rem, 8vw, 4.5rem);
   line-height: 1.1;
   word-break: break-word;
   overflow-wrap: break-word;
-  white-space: normal; /* MUST */
+  white-space: normal;
+  /* MUST */
   max-width: 100%;
 }
+
+/* Sidebar images */
+.sidebar-img {
+  width: 100px;
+  /* fixed width */
+  height: 100px;
+  /* fixed height */
+  object-fit: cover;
+  /* crop image to fit without stretching */
+  display: block;
+  margin: 0 auto;
+  /* center horizontally */
+}
+
+.popular-post-widget img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  /* optional rounded corners */
+}
+
+.post-headline {
+  color: #007d00;
+}
+
+.post-headline:hover {
+  color: #005600;
+  text-decoration: none;
+}
+
 
 @media (min-width: 768px) {
   header.masthead {
