@@ -13107,7 +13107,7 @@ p {
 }
 
 #mainNav .navbar-brand img {
-  height: 4.5rem;
+  height: 5.5rem;
 
 }
 
@@ -13137,8 +13137,15 @@ p {
   }
 
   #mainNav .navbar-brand img {
-    height: 4.5rem;
+    height: 5.5rem;
     transition: height 0.3s ease-in-out;
+  }
+
+  /* Hide on mobile */
+  @media (max-width: 767.98px) {
+    .topbar {
+      display: none !important;
+    }
   }
 
   #mainNav.navbar-shrink {
@@ -13171,8 +13178,8 @@ header.masthead {
   color: #fff;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../img/header/bg-1.jpg");
-   background-repeat: no-repeat;
+    url("../img/header/bg-5.jpg");
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
