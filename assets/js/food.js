@@ -1,10 +1,4 @@
-AOS.init({
-  duration: 600, // animation duration in ms
-  once: true
-});
-
-// Refresh AOS every time the mobile menu opens
-
+//================== AOS Animation Initialization ===================//
 
 document.addEventListener('DOMContentLoaded', function() {
       AOS.init({
@@ -19,7 +13,7 @@ carousel.addEventListener('slid.bs.carousel', function () {
 });
   });
 
-
+  //================== PWA Installation Prompt ===================//
 
 let deferredPrompt;
 window.addEventListener('beforeinstallprompt', (e) => {
