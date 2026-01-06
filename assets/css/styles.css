@@ -13141,12 +13141,6 @@ p {
     transition: height 0.3s ease-in-out;
   }
 
-  /* Hide on mobile */
-  @media (max-width: 767.98px) {
-    .topbar {
-      display: none !important;
-    }
-  }
 
   #mainNav.navbar-shrink {
     padding-top: 1rem;
