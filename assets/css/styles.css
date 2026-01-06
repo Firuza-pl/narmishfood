@@ -6859,7 +6859,8 @@ fieldset:disabled .btn {
 }
 
 .carousel-control-prev,
-.carousel-control-next {
+.carousel-control-next , #testimonialCarousel .carousel-control-prev,
+#testimonialCarousel .carousel-control-next {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -12861,8 +12862,18 @@ p {
 
 #testimonials .carousel-control-prev,
 #testimonials .carousel-control-next {
-  display: none !important;/
+  background-color: #000000;
+  border-radius: 13%;
+  width: 40px;
+  height: 40px;
+  top: 45%;
+  background-size: 100%, 100%;
 }
+
+#testimonials .carousel-control-prev-icon, #testimonials .carousel-control-next-icon{
+  background-color: #000000;
+}
+
 
 .stats-section {
   background: linear-gradient(135deg, #498559, #498559);
